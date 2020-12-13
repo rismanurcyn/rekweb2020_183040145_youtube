@@ -16,7 +16,7 @@ $channelName = $result['items'][0]['snippet']['title'];
 $subscriber = $result['items'][0]['statistics']['subscriberCount'];
 
 //Latest Video
-$result = get_CURL('https://www.googleapis.com/youtube/v3/search?key=AIzaSyC0FLFARZypjPDl6ljNaWt0aNG7pzP-GH8&channelId=UCkXmLjEr95LVtGuIm3l2dPg&maxResults=1order=date&part=snippet');
+$result = get_CURL('https://www.googleapis.com/youtube/v3/search?key=AIzaSyC0FLFARZypjPDl6ljNaWt0aNG7pzP-GH8&channelId=UCkXmLjEr95LVtGuIm3l2dPg&maxResults=1&order=date&part=snippet');
 $latestVideoId = $result['items'][0]['id']['VideoId'];
 ?>
 
